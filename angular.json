@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularGit",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularGit"
+    }
+  },
+  "defaultProject": "angularGit",
+  "cli": {
+    "analytics": "59ebf7fc-9f8f-46fc-8d1c-5df8051be72d"
+  }
 }
