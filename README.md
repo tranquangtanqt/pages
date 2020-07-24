@@ -1,3 +1,11 @@
+# Deploy
+`git pull origin master --allow-unrelated-histories`
+`git remote add origin https://github.com/tranquangtanqt/demoPageAngular.git`
+`ng build --prod --baseHref=” https://github.com/tranquangtanqt/demoPageAngular/”`
+`git add`
+`git commit -m "commit"`
+`git push -u origin master`
+
 # AngularGit
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
