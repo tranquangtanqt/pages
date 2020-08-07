@@ -1,0 +1,28 @@
+Có 2 cách để binding data:
++ sử dụng thư viện:  '@angular/forms';
+    (file app.module.ts)
+    import { FormsModule} from '@angular/forms';
+    @NgModule({
+        ....
+        imports: [
+        FormsModule
+    ],
++ Cách 2: 
+    (file .ts)
+    show(event){
+        this.name = event.target.value
+    }
+
+    (file html)
+    <!-- <input type="text" value="" placeholder="Nhap ten" (keyup)="show($event)"> -->
+    <input type="text" value="" placeholder="Nhap ten" [(ngModel)]="name" #txtUserName>
+    <p [style.color]="name.length % 2 != 0 ? 'red': 'black'">Name: {{name}}</p>
+    <code>{{txtUserName.value | json}}</code>
+
+(File .html)
+Khai báo: #Ten_bien
+<input type="text" value="" placeholder="Nhap ten" [(ngModel)]="name" #txtUserName>
+Hiển thị dữ liệu:
+<code>{{txtUserName.value | json}}</code>
+
+

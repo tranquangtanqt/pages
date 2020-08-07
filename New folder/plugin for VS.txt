@@ -1,0 +1,4 @@
+auto save: Chọn file => autosave
+
+npm intellisense
+path intellisense

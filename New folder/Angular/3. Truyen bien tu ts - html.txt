@@ -1,0 +1,12 @@
+- trong file ts. Khai báo biến trong export
+export class WordComponent{
+	en: string = 'Hello';
+	vn: string = 'Xin chao';
+	imageUrl = 'https://angular.io/assets/images/logos/angular/shield-large.svg'
+	forgot = false
+}
+
+- trong file html gọi biến: {{ en }} - {{vi}}
+<img src="{{ imageUrl }}" alt="">
+<img [src]="imageUrl" alt="">
+<h2 [hidden] = forgot>Hello World</h2>

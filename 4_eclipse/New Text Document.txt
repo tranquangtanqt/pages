@@ -1,0 +1,2 @@
+1. Chuột phải server => open => chọn open launch..
+3. Source => Add => Java Project => chọn project

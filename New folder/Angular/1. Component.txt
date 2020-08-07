@@ -1,0 +1,13 @@
+TẠO COMPONENT
+- Tạo file word.component.ts
+- import thư viện: import { Component } from '@angular/core';
+-
+@Component({
+	template: '<h1>Hello World</h1>',
+	selector: 'app-word'
+})
+export class WordComponent{}
+
+- Vào app.module.ts
++ import file word.component
++ Thêm vào NgModule => declarations giá trị: WordComponent

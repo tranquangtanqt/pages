@@ -1,0 +1,98 @@
+/*calendar*/
+.explanation {
+  background: var(--color);
+  grid-column: span 6;
+  padding: 28px;
+  color: #fff;
+  line-height: 1.7;
+}
+.explanation a {
+  text-decoration: none;
+  color: #fff;
+  padding: 3px 0;
+  border-bottom: 1px dashed;
+}
+.explanation a:hover {
+  border-bottom: 1px solid;
+}
+
+.date {
+	background: var(--color);
+	padding: 15px;
+	position: relative;
+	font-size: 20px;
+	border-top: 1px solid #7d6161d9;
+}
+
+.month {
+  	background: var(--color);
+    font: 900 63px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 50px 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+}
+.month--july--2019 {
+  grid-column: span 7;
+}
+
+.main-content {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(6, 200px) 80px;
+  grid-template-columns: repeat(7, minmax(170px, 1fr));
+}
+
+#id07-2019 .date:after {
+	position: absolute;
+	z-index: 20;
+	top: 15px;
+	right: 15px;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+#id07-2019 .date:nth-child(7n + 2):after {
+  content: "Mon";
+}
+
+#id07-2019 .date:nth-child(7n + 3):after {
+  content: "Tue";
+}
+
+#id07-2019 .date:nth-child(7n + 4):after {
+  content: "Wed";
+}
+
+#id07-2019 .date:nth-child(7n + 5):after {
+  content: "Thu";
+}
+
+#id07-2019 .date:nth-child(7n + 6):after {
+  content: "Fri";
+}
+
+#id07-2019 .date:nth-child(7n):after {
+  content: "Sat";
+}
+
+#id07-2019 .date:nth-child(7n + 1):after {
+  content: "Sun";
+}
+
+/*#id07-2019 .event {
+	z-index: 10;
+	background: transparent;
+	padding-top: 40px;
+}*/
+.event__name {
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 20px;
+	height: auto;
+	padding: 10px;
+	/*margin: 10px;*/
+	font-size: 14px;
+}

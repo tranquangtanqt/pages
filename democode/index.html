@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo code</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../bower_components/code-editor/codemirror.css">
+    <link rel="stylesheet" href="../bower_components/code-editor/ambiance.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<textarea id="code1">
+<script>
+	$(document).ready(function() {
+		var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
+			lineNumbers: true,
+			matchBrackets: true,
+			styleActiveLine: true,
+			theme: "ambiance"
+		});
+
+		var editor_two = CodeMirror.fromTextArea(document.getElementById("code2"), {
+			lineNumbers: true,
+			matchBrackets: true,
+			styleActiveLine: true
+		});
+	});
+</script>
+				</textarea>
+			</div>
+		</div>
+	</div>
+    
+    <script src="../bower_components/jqueryv3.4.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="../bower_components/code-editor/codemirror.js"></script>
+    <script src="../bower_components/code-editor/code-editor.js"></script>
+    <script>
+    	(function ($) {
+		 "use strict";
+			var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
+				lineNumbers: true,
+				matchBrackets: true,
+				styleActiveLine: true,
+				theme:"ambiance"
+			});
+		})(jQuery); 
+    </script>
+</body>
+</html>
